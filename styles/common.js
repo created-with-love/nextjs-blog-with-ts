@@ -51,6 +51,11 @@ export const ButtonSecondary = styled.button`
     border-color: rgba(255, 255, 255, 1);
     cursor: pointer;
   }
+
+  &:disabled {
+    background-color: gray;
+    pointer-events: none;
+  }
 `;
 
 export const Button = styled(ButtonSecondary)`
