@@ -20,5 +20,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 This project has several pages:
 
 / - main page with lates posts
+
 /posts/[postId] - page with post that has [postId] id
+
 /posts/new - page to create a new post
