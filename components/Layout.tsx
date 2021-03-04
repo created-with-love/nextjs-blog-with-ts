@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
+import styled from 'styled-components';
+
 import { Toolbar } from './Toolbar';
 
 interface LayoutProps {
@@ -7,9 +9,14 @@ interface LayoutProps {
   title: string;
 }
 
+const StyledLayout = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+`;
+
 const Layout = ({ children, title }: LayoutProps) => {
   return (
-    <>
+    <StyledLayout>
       <Head>
         <title>{title}</title>
         <meta name="description" content={`This is the blog feed page`} />
@@ -19,7 +26,7 @@ const Layout = ({ children, title }: LayoutProps) => {
         <Toolbar />
         {children}
       </div>
-    </>
+    </StyledLayout>
   );
 };
 

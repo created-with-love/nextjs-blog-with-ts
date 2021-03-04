@@ -1,4 +1,9 @@
-import { instance } from '../helpers/axiosInstance';
+import axios from 'axios';
+
+export const instance = axios.create({
+  baseURL: 'https://simple-blog-api.crew.red',
+  responseType: 'json',
+});
 
 export const createNewPost = async ({ title, body }: {title: string, body: string}) => {
     try {

@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { PostData } from '../../interfaces/post';
-import { instance } from '../../helpers/axiosInstance';
+import { instance } from '../../services/APIhandlers';
 import { NextPageContext } from 'next';
 import { useRouter } from 'next/router';
 import Layout from '../../components/Layout';
