@@ -1,11 +1,11 @@
 import Head from 'next/head';
 import { AxiosResponse } from 'axios';
-import { AxiosDataProps } from '../interfaces/post';
+import { AxiosDataProps, PostData } from '../interfaces/post';
 import PostsEL from '../components/Posts';
 import { instance } from '../helpers/axiosInstance';
 import { Toolbar } from '../components/Toolbar';
 
-export default function Posts({ posts }): JSX.Element {
+export default function Posts({ posts }: { posts: PostData[] }): JSX.Element {
   return (
     <>
       <Head>
